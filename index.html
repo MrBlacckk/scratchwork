@@ -3,22 +3,164 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scratchwork</title>
-<style>
-  :root { --fg: #1c1b1f; --bg: #ffffff; --muted: #5f5b66; --link: #1f5fbf; }
-  @media (prefers-color-scheme: dark) { :root { --fg: #e6e1e5; --bg: #141218; --muted: #b8b3bf; --link: #a8c7fa; } }
-  body { font: 16px/1.55 system-ui, sans-serif; max-width: 36rem; margin: 0 auto; padding: 1rem; color: var(--fg); background: var(--bg); }
-  a { color: var(--link); }
-  li { margin: 0.5rem 0; }
-</style>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Scratchwork | Handwritten notes that check your math</title>
+<meta name="description" content="Pen notes for STEM students that check your math step by step and build practice tests from your own notes. Invite-only beta for Android and Windows.">
+<link rel="canonical" href="https://mrblacckk.github.io/scratchwork/">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#fdfcf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141218" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Scratchwork">
+<meta property="og:title" content="Scratchwork | Handwritten notes that check your math">
+<meta property="og:description" content="Pen notes for STEM students that check your math step by step and build practice tests from your own notes. Invite-only beta for Android and Windows.">
+<meta property="og:url" content="https://mrblacckk.github.io/scratchwork/">
+<meta property="og:image" content="https://mrblacckk.github.io/scratchwork/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Scratchwork&#x27;s Math card marking step 5 of a handwritten physics problem as the first wrong step.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scratchwork | Handwritten notes that check your math">
+<meta name="twitter:description" content="Pen notes for STEM students that check your math step by step and build practice tests from your own notes. Invite-only beta for Android and Windows.">
+<meta name="twitter:image" content="https://mrblacckk.github.io/scratchwork/img/og.png">
+<meta name="twitter:image:alt" content="Scratchwork&#x27;s Math card marking step 5 of a handwritten physics problem as the first wrong step.">
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Scratchwork",
+  "url": "https://mrblacckk.github.io/scratchwork/",
+  "description": "Pen-first notes for university STEM students. Scratchwork checks your math step by step and builds practice tests, lessons and flashcards from your own notes and class material. Invite-only beta for Android and Windows.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Android, Windows",
+  "image": "https://mrblacckk.github.io/scratchwork/img/og.png",
+  "screenshot": [
+    "https://mrblacckk.github.io/scratchwork/img/tablet-math.webp",
+    "https://mrblacckk.github.io/scratchwork/img/tablet-practice.webp"
+  ],
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Nolan Blair"
+  }
+}
+</script>
 </head>
 <body>
-<h1>Scratchwork</h1>
-<p>Notes, ink and practice for students.</p>
-<ul>
-  <li><a href="privacy.html">Privacy policy</a></li>
-  <li><a href="delete-account.html">Delete your account</a></li>
-</ul>
-<p class="muted" style="color:var(--muted)">Support: <a href="mailto:ntblair417@gmail.com">ntblair417@gmail.com</a></p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <a class="brand" href="index.html"><img src="img/icon-64.png" width="32" height="32" alt="Scratchwork app icon">Scratchwork</a>
+  <nav aria-label="Main">
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="faq.html">FAQ</a>
+    <a href="support.html">Support</a>
+    <a class="btn small" href="mailto:ntblair417+scratchwork@gmail.com?subject=Scratchwork%20invite%20request&amp;body=Hi%2C%20I%27d%20like%20a%20Scratchwork%20beta%20invite.%0D%0A%0D%0ADevice%20(Android%20tablet%2C%20Android%20phone%20or%20Windows)%3A%20%0D%0AWhat%20I%27d%20use%20it%20for%20(optional)%3A%20">Request an invite</a>
+  </nav>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <h1>Handwritten notes that check your math</h1>
+    <p class="lede">Scratchwork is a notes app for STEM students who work problems by hand. Write with a pen and it reads your steps, then points to the first one that went wrong. It also turns your notes and class material into practice tests, lessons and flashcards.</p>
+    <p class="cta">
+      <a class="btn" href="mailto:ntblair417+scratchwork@gmail.com?subject=Scratchwork%20invite%20request&amp;body=Hi%2C%20I%27d%20like%20a%20Scratchwork%20beta%20invite.%0D%0A%0D%0ADevice%20(Android%20tablet%2C%20Android%20phone%20or%20Windows)%3A%20%0D%0AWhat%20I%27d%20use%20it%20for%20(optional)%3A%20">Request an invite</a>
+      <a class="btn plain" href="features.html">See the features</a>
+    </p>
+    <p class="small">Invite-only beta. Android tablets and phones, and Windows. iOS is planned.</p>
+    <figure>
+      <img src="img/tablet-math.webp" width="1280" height="800" alt="A tablet showing a handwritten physics problem about a cart on a ramp, with the Math card open. The card marks step 5 as wrong and explains the fix.">
+      <figcaption>Demo notes. The last line halved v squared instead of taking its square root, and the Math card marks step 5 as the first wrong one.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>It checks each step, not just the answer</h2>
+      <p>Turn on Math help and end a line with =. A faint answer appears, and a tutor flags any step that does not add up. Or circle a few lines with the lasso and tap Math: every line gets a tick or a cross, and the first wrong step comes with the fix.</p>
+      <p>If it read your handwriting wrong, tap the part and correct it. Steps the app can settle on your device are checked there, without AI, and the card says so.</p>
+    </div>
+    <figure>
+      <img src="img/tablet-notes.webp" width="1280" height="800" loading="lazy" alt="A handwritten lecture page on friction, with a boxed formula and a sketch of a block on an incline.">
+      <figcaption>A lecture page in demo notes. Pens, highlighters, shapes and a lasso, on a page made for a stylus.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split flip">
+    <div>
+      <h2>Practice tests from your own class</h2>
+      <p>Open a class folder, tap Study, and pick a practice test. Scratchwork writes it from your notes and the class material you have connected, solved the way your course teaches. Multiple choice, short answer and worked problems, timed if you want.</p>
+      <p>Answer keys are checked before you see them. If a key does not check out, the question is dropped and the test says so. Every miss shows why, and goes to your Mistakes Log.</p>
+    </div>
+    <figure>
+      <img src="img/tablet-practice.webp" width="1280" height="800" loading="lazy" alt="A practice test question about a block on a 30 degree incline, with a wrong answer marked and an explanation underneath.">
+      <figcaption>A practice question in demo notes, after a wrong answer.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>Lessons and flashcards from the same notes</h2>
+      <p>A lesson takes one topic a step at a time: the idea, the key equations, a worked example, then a check question. Miss one and it teaches that part again. It can read the lesson aloud.</p>
+      <p>Flashcards come from your notes and from the questions you missed, and they come back on a schedule.</p>
+    </div>
+    <figure>
+      <img src="img/tablet-learn.webp" width="1280" height="800" loading="lazy" alt="A lesson called Friction on an incline, showing the idea, the key equations and a worked example.">
+      <figcaption>A lesson in demo notes.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    <h2>Who it is for</h2>
+    <p>University students in calculus, physics, dynamics, circuits, differential equations and similar classes, who work problems on a tablet or on paper and want to find the wrong step before the exam does.</p>
+    <p>It can connect to Blackboard, WebAssign and WeBWorK so due dates, files and homework sit next to your notes. You sign in on your school's own page, and Scratchwork only reads. It never submits, saves or starts anything.</p>
+    <p><a href="features.html">Everything it does</a></p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap prose">
+    <h2>Invite-only beta</h2>
+    <p>Scratchwork is in an invite-only beta. Email me which device you will use (Android tablet, Android phone or Windows) and I will reply with how to install it. That is all I ask. There is no form and no sign-up on this site.</p>
+    <p>Expect rough edges. The app has a Send feedback button, and I read what comes in. No prices are set yet, and nothing in the beta can charge you.</p>
+    <p class="cta"><a class="btn" href="mailto:ntblair417+scratchwork@gmail.com?subject=Scratchwork%20invite%20request&amp;body=Hi%2C%20I%27d%20like%20a%20Scratchwork%20beta%20invite.%0D%0A%0D%0ADevice%20(Android%20tablet%2C%20Android%20phone%20or%20Windows)%3A%20%0D%0AWhat%20I%27d%20use%20it%20for%20(optional)%3A%20">Request an invite</a> <a class="btn plain" href="pricing.html">Pricing and beta details</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    <h2>Why I built it</h2>
+    <!-- Owner's own text goes here. -->
+    <p>I am a student, and I built Scratchwork because I wanted to find out which line of a solution was wrong without waiting for a grade, and to practice from the problems my class actually uses. Your notes stay on your device unless you sign in to sync them. There are no ads, and I do not sell your data. <a href="privacy.html">Read the privacy policy</a>.</p>
+  </div>
+</section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <ul class="foot-links">
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="delete-account.html">Delete your account</a></li>
+    </ul>
+    <p class="small">Scratchwork is an invite-only beta, made by Nolan Blair in Grand Forks, North Dakota. Questions: <a href="mailto:ntblair417+scratchwork@gmail.com">ntblair417+scratchwork@gmail.com</a>.</p>
+    <p class="small">Scratchwork is not made by or affiliated with Blackboard, WebAssign, WeBWorK or any school.</p>
+  </div>
+</footer>
 </body>
 </html>

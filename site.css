@@ -1,0 +1,123 @@
+/* Scratchwork site. Flat colours, system fonts, no scripts. Written by hand. */
+:root {
+  --bg: #fdfcf8;
+  --fg: #1c1b1f;
+  --muted: #5f5b66;
+  --line: #dcd8e0;
+  --accent: #304ffe;
+  --on-accent: #ffffff;
+  --band: #f4f2ec;
+  --rule: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='40'%3E%3Crect y='39' width='8' height='1' fill='%23e2dfe9'/%3E%3C/svg%3E");
+  --blank-bg: #fff3b0;
+  --blank-fg: #3d2e00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141218;
+    --fg: #e6e1e5;
+    --muted: #b8b3bf;
+    --line: #3d3a44;
+    --accent: #8c9eff;
+    --on-accent: #141218;
+    --band: #1b1920;
+    --rule: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='40'%3E%3Crect y='39' width='8' height='1' fill='%2326232d'/%3E%3C/svg%3E");
+    --blank-bg: #5c4a00;
+    --blank-fg: #fff3b0;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font: 1.0625rem/1.6 system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--accent); text-underline-offset: 0.15em; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--bg); padding: 0.6rem 1rem; z-index: 10; }
+.skip:focus { left: 0.5rem; top: 0.5rem; }
+
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 1rem; }
+.prose > * { max-width: 42rem; }
+.prose > .split, .prose > figure { max-width: none; }
+.small { font-size: 0.9rem; color: var(--muted); }
+
+/* Header and footer */
+header.site {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 0.25rem 1.25rem; max-width: 68rem; margin: 0 auto; padding: 0.6rem 1rem;
+}
+.brand { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--fg); font-weight: 700; font-size: 1.15rem; text-decoration: none; min-height: 44px; }
+.brand img { border-radius: 7px; border: 1px solid var(--line); }
+header.site nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.1rem; }
+header.site nav a:not(.btn) { color: var(--fg); text-decoration: none; padding: 0.7rem 0; min-height: 44px; }
+header.site nav a:not(.btn):hover { text-decoration: underline; }
+footer.site { border-top: 1px solid var(--line); margin-top: 5rem; padding: 1.5rem 0 2.5rem; }
+.foot-links { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
+.foot-links a { display: inline-block; padding: 0.6rem 0; }
+footer.site p { margin: 0.4rem 0; max-width: 46rem; }
+
+/* Buttons */
+.btn {
+  display: inline-block; padding: 0.7rem 1.15rem; min-height: 44px;
+  background: var(--accent); color: var(--on-accent); border-radius: 8px;
+  font-weight: 650; text-decoration: none; border: 1px solid var(--accent);
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.plain { background: transparent; color: var(--fg); border-color: var(--line); }
+.btn.plain:hover { border-color: var(--fg); filter: none; }
+.btn.small { padding: 0.5rem 0.9rem; min-height: 44px; }
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.75rem 0 0.75rem; }
+
+/* Type */
+h1 { font-size: clamp(2.1rem, 6.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 1rem; font-weight: 750; }
+h2 { font-size: clamp(1.45rem, 3.6vw, 1.9rem); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 0.75rem; }
+h3 { font-size: 1.15rem; margin: 1.75rem 0 0.4rem; }
+p { margin: 0 0 1rem; }
+.lede { font-size: clamp(1.1rem, 2.4vw, 1.3rem); line-height: 1.5; max-width: 40rem; }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.35rem 0; }
+
+/* Page sections */
+.hero { padding: 3rem 0 2.5rem; background-image: var(--rule); border-bottom: 1px solid var(--line); }
+.hero figure { margin: 2.5rem 0 0; }
+.page-head { padding: 3rem 0 1rem; }
+.section { padding: 3.5rem 0 0; }
+.band { background: var(--band); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 3rem 0; margin-top: 4rem; }
+.split { display: grid; gap: 1.5rem; align-items: center; }
+@media (min-width: 54rem) {
+  .split { grid-template-columns: 5fr 7fr; gap: 3rem; }
+  .split.flip { grid-template-columns: 7fr 5fr; }
+  .split.flip > :first-child { order: 2; }
+}
+.split.top { align-items: start; }
+figure { margin: 0; }
+figure img { display: block; width: 100%; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.6rem; max-width: 40rem; }
+.phones { display: flex; gap: 1rem; align-items: flex-start; }
+.phones figure { flex: 1 1 0; min-width: 0; }
+.phones figure + figure { margin-top: 2rem; }
+.plain-list { list-style: none; padding: 0; }
+.plain-list li { padding: 0.6rem 0; border-top: 1px solid var(--line); margin: 0; }
+.plain-list li:last-child { border-bottom: 1px solid var(--line); }
+
+/* FAQ */
+details { border-top: 1px solid var(--line); }
+details:last-of-type { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 650; padding: 0.9rem 0; min-height: 48px; }
+details p:last-child { margin-bottom: 1.1rem; }
+
+/* Legal pages made from assets/legal */
+.legal h1 { font-size: 1.9rem; margin-top: 2.5rem; }
+.legal h2 { font-size: 1.3rem; margin-top: 2.25rem; }
+.legal h3 { font-size: 1.05rem; }
+.legal table { border-collapse: collapse; width: 100%; font-size: 0.92rem; display: block; overflow-x: auto; }
+.legal th, .legal td { border: 1px solid var(--line); padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+.legal code { font-size: 0.9em; word-break: break-word; }
+.legal .note { color: var(--muted); border-left: 3px solid var(--line); padding-left: 0.8rem; margin-left: 0; }
+.legal hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+.legal { overflow-wrap: anywhere; }
+mark.blank { background: var(--blank-bg); color: var(--blank-fg); padding: 0 0.2rem; border-radius: 3px; }

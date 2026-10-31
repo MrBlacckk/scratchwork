@@ -1,0 +1,18 @@
+# Scratchwork
+
+> Pen-first notes for university STEM students. Scratchwork checks your math step by step and builds practice tests, lessons and flashcards from your own notes and class material. Invite-only beta for Android and Windows.
+
+Scratchwork is a notes app for university STEM students who write by hand. It runs on Android tablets and phones and on Windows; iOS is planned. It is an invite-only beta made by one person. No prices are set yet. Request an invite by emailing ntblair417+scratchwork@gmail.com.
+
+What it does: handwritten notebooks with a pen; a Math card that checks each step and points to the first wrong one; practice tests, step-by-step lessons, flashcards and formula sheets built from your own notes and class material; a Mistakes Log. It can read Blackboard, WebAssign and WeBWorK with your own sign-in and never submits anything. Scratchwork is not affiliated with Blackboard, WebAssign, WeBWorK or any school.
+
+## Pages
+
+- [Scratchwork](https://mrblacckk.github.io/scratchwork/): What Scratchwork is and who it is for
+- [Features](https://mrblacckk.github.io/scratchwork/features.html): Everything the app does today
+- [Pricing and beta](https://mrblacckk.github.io/scratchwork/pricing.html): Beta status and how to ask for an invite
+- [FAQ](https://mrblacckk.github.io/scratchwork/faq.html): Devices, accounts, privacy, math checking, school systems
+- [Support](https://mrblacckk.github.io/scratchwork/support.html): How to get help, send feedback, export or delete your data
+- [Privacy policy](https://mrblacckk.github.io/scratchwork/privacy.html): Privacy policy
+- [Terms of service](https://mrblacckk.github.io/scratchwork/terms.html): Terms of service
+- [Delete your Scratchwork account](https://mrblacckk.github.io/scratchwork/delete-account.html): Delete your account
